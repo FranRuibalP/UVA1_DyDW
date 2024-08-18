@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional</title>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="aboutMe.html">Sobre Mí</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Currículum</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+
+    <!-- Sección Contacto -->
+    <div id="contact">
+        <h2>Contacto</h2>
+        <form onsubmit="return mostrarAlerta()" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" >Enviar</button>
+            <script>
+                function mostrarAlerta() {
+                    alert("¡Mensaje Enviado!");
+                    return false;
+                }
+            </script>
+        </form>
+        <p>Email: fruibalpalacio@uade.edu.ar</p>
+        <p>Teléfono: +54 911 6403-5402</p>
+        <p><a href="https://www.linkedin.com/in/francisco-ruibal-palacio-2615ba2a9/">LinkedIn</a></p>
+    </div>
+    <!-- Footer -->
+    <footer style="display: flex;">
+        <p>&copy; 2024 Francisco Ruibal Palacio</p>
+    </footer>
+</body>
+</html>
+    
