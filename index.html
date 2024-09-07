@@ -3,33 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Profesional</title>
+    <title>Francisco Ruibal Palacio</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <!-- Menú de navegación -->
-    <nav>
-        <ul>
-            <li>Inicio</li>
-            <li><a href="./pages/aboutMe.html">Sobre Mí</a></li>
-            <li><a href="./pages/portfolio.html">Portfolio</a></li>
-            <li><a href="./pages/resume.html">Currículum</a></li>
-            <li><a href="./pages/services.html">Servicios</a></li>
-            <li><a href="./pages/contact.html">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <!-- Sección Inicio -->
-    <div id="home">
-        <h1>Bienvenido a mi Portfolio</h1>
-        <img src="./images/profilePic.jpeg" alt="Foto personal" width="360" height="360">
-        <p>Hola, soy Francisco Ruibal Palacio y soy estudiante de la carrera de Ingeniería en Informática en UADE</p>
-        <p>Actualmente me encuentro en el último año de la carrera y cursando el proyecto final. Este mismo año también se me otorgó el título intermedio de Analista en Informática.</p>
-        <p>A pesar de no tener experiencia laboral, poseo conocimientos de varios lenguajes de programación, como así también de desarrollo fullstack tanto web y mobile, arquitectura cloud mediante AWS y machine learning.</p>
-    </div>
-    <!-- Footer -->
-    <footer style="display: flex;">
-        <p>&copy; 2024 Francisco Ruibal Palacio</p>
-    </footer>
-</body>
-</html>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"><b>Trabajo</b></a></li>
+                <li><a href="./pages/aboutMe.html">Sobre Mí</a></li>
+                <li><a href="./pages/contact.html">Contacto</a></li>
+            </ul>
+            <h1 class="headerh1" style="color: white"><b>Francisco Ruibal Palacio</b></h1>
+            
+        </nav>
+    </header>
+    <section class="hero">
+        <image  class='profile-pic'src="./images/profilePic.jpeg" alt="Francisco Ruibal Palacio"></image>
+        <h2>Hola! Soy Francisco.</h2>
+        <p>Soy graduado de Ingeniería en Informática</p>
+        <p>Abajo encontrarás mis proyectos</p>
+        <div class="scroll-indicator">
+            <span>&#x2193;</span>
+        </div>
+    </section>
+    <section class="projects">
+        <h2 style="color:#ff5c5c; font-size: 2.5rem; margin-bottom: 20px;">Proyectos</h2>
+        
+        <div class="project">
+            <div class="project-text">
+                <h3 class='project-h3'><b>Recetas Ya</b></h3>
+                <p class="'project-p" style="text-align: left; margin-bottom: 10px;">Página web de visualización de recetas creadas por la comunidad. Contiene un buscador con filtros para encontrar recetas según las necesidades del usuario. Permite crear un perfil y subir y editar recetas con imágenes. La aplicación también permite dejar comentarios y calificar las recetas.</p>
+                <p class="'project-p" style="text-align: left;margin-bottom: 10px;">La aplicación utiliza HTML, CSS y JavaScript para el frontend, haciendo uso de ReactJs y librerías como Bootstrap, MaterialUI y Express.</p>
+                <p class="'project-p" style="text-align: left;margin-bottom: 10px;">En el backend, se utilizó NodeJs y MongoDb como base de datos, utilizando Mongoose para realizar las conexiones. La carga de imágenes de la aplicación se implementó utilizando Cloudinary.</p>
+                <p class="'project-p" style="text-align: left;margin-bottom: 10px;">El desarrollo fue realizado de manera individual</p>
+                <a href="https://github.com/FranRuibalP/api-recetas" target="_blank" style="text-align: left;margin-bottom: 10px;">Github</a>
+            </div>
+            <div class="project-image">
+                <img src="./images/RecetasYa_1.png" alt="Proyecto 1">
+            </div>
+        </div>
     
+        <div class="project">
+            <div class="project-text">
+                <h3 class='project-h3'><b>Mi Home</b></h3>
+                <p class="'project-p" style="text-align: left; margin-bottom: 10px;">Aplicación Mobile para Android. App orientada a la venta y alquiler de propiedades. Permite la creación de 2 tipos de usuarios: inmobiliarias y compradores. Las inmobiliarias pueden cargar nuevas publicaciones con todas las especificaciones necesarias de los inmuebles a la venta o en alquiler, incluyendo imágenes y videos. Los compradores cuentan con un buscador de propiedades con filtros, pueden dejar comentarios y calificar inmobiliarias, y agregar propiedades a favoritos.</p>
+                <p class="'project-p" style="text-align: left;margin-bottom: 10px;">El frontend está desarrollado en React Native utilizando JavaScript, CSS y Expo para correr la aplicación.</p>
+                <p class="'project-p" style="text-align: left;margin-bottom: 10px;">El backend se desarrolló con NodeJs y una base de datos en MongoDb.</p>
+                <p class="'project-p" style="text-align: left;margin-bottom: 10px;">Se implementó también un inicio de sesión con Google y obtención de las propiedades mediante geolocalización gracias a la API de Google.</p>
+                <p class="'project-p" style="text-align: left;margin-bottom: 10px;">El desarrollo fue realizado en un equipo de 5 integrantes. Mi rol fue en su mayoría en el frontend, aunque también ayudé con el backend.</p>
+                <a href="https://github.com/FranRuibalP/MiHome-DDAI" target="_blank" style="text-align: left;margin-bottom: 10px;">Github</a>
+            </div>
+            <div class="project-image">
+                <img src="./images/MiHome_2.png" alt="Proyecto 1" style="height: 500px; width: auto;">
+                
+            </div>
+        </div>
+    
+        <div class="project">
+            <div class="project-text">
+                <h3 class='project-h3'><b>Ruyu</b></h3>
+                <p class="'project-p" style="text-align: left; margin-bottom: 10px;">Creación de un modelo de machine learning diseñado para predecir ventas, hits y géneros populares de videojuegos a nivel mundial en el año 2024.</p>
+                <p class="'project-p" style="text-align: left;margin-bottom: 10px;">Desarrollado en Python implementando modelos de regresión y clasificación.</p>
+                <p class="'project-p" style="text-align: left;margin-bottom: 10px;">Actualmente en desarrollo en un equipo de 2 integrantes.</p>
+            </div>
+            <div class="project-image">
+                <img src="./images/back-software.jpg" alt="Proyecto 1">
+            </div>
+        </div>
+    </section>
+
+</body>
+<footer>
+    <p>&copy; 2024 Francisco Ruibal Palacio</p>
+</footer>
+</html>
